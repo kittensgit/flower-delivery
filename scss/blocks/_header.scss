@@ -1,0 +1,19 @@
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+
+        &-item {
+            display: flex;
+        }
+    }
+    &__item-link {
+        padding: 24px 32px;
+        border-right: 1px solid black;
+
+        &:first-child {
+            border-left: 1px solid black;
+        }
+    }
+}
