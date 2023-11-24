@@ -1,0 +1,112 @@
+.category {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        border-left: $border;
+    }
+    &__about {
+        display: flex;
+
+        &-info {
+            padding: 80px;
+            border-bottom: $border;
+        }
+
+        &-title {
+            width: 560px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 68px;
+            line-height: 80.4px;
+            margin-bottom: 16px;
+        }
+        &-desc {
+            width: 560px;
+            font-size: 18px;
+            line-height: 25.2px;
+            padding-bottom: 54px;
+
+            &-italic {
+                font-style: italic;
+            }
+        }
+        &-decor {
+            display: flex;
+            gap: 24px;
+            padding-top: 24px;
+            border-top: $border;
+        }
+        &-img {
+            padding-right: 24px;
+            border-right: $border;
+        }
+        &-caption {
+            align-self: self-end;
+            width: 280px;
+            font-size: 14px;
+            line-height: 16.8px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-item {
+            display: flex;
+        }
+    }
+    &__item-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 24px;
+        justify-content: flex-end;
+        width: 359px;
+        border-bottom: $border;
+    }
+    &__item-title {
+        width: 312px;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 45.6px;
+    }
+    &__item-link {
+        font-style: italic;
+        font-weight: 100;
+        line-height: 19.2px;
+        letter-spacing: 0.4px;
+        margin-top: 109px;
+        position: relative;
+
+        &-left {
+            padding-right: 28px;
+
+            &::after {
+                @include arrow-after;
+                background-image: url('../../img/arrow-right.png');
+                right: 0;
+            }
+        }
+        &-right {
+            padding-left: 28px;
+
+            &::after {
+                @include arrow-after;
+                background-image: url('../../img/arrow-left.png');
+                left: 0;
+            }
+        }
+    }
+    &__item-img {
+        border-right: $border;
+        width: 360px;
+    }
+}
+
+.left {
+    border-left: $border;
+}
+.right {
+    border-right: $border;
+}
