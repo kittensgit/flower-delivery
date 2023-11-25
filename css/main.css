@@ -247,4 +247,59 @@ body {
 
 .right {
   border-right: 1px solid #121212;
+}
+
+.story__content {
+  display: flex;
+  border-left: 1px solid #121212;
+  border-right: 1px solid #121212;
+}
+.story__question {
+  padding: 80px;
+  border-top: 1px solid #121212;
+}
+.story__question-title {
+  width: 560px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 60px;
+}
+.story__about {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border-left: 1px solid #121212;
+}
+.story__about-caption {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.story__about-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45.6px;
+  margin-bottom: 16px;
+}
+.story__about-desc {
+  line-height: 22.4px;
+  width: 543px;
+}
+.story__about-btn {
+  padding: 16px 24px 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.48px;
+  border: 1px solid #121212;
+  margin-top: 64px;
+  align-self: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+.story__about-btn:hover {
+  color: white;
+  background-color: #121212;
 }/*# sourceMappingURL=main.css.map */
