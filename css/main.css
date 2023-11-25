@@ -342,4 +342,130 @@ body {
 }
 .advantages__list-item-item:last-child {
   border-bottom: none;
+}
+
+.contact__content {
+  display: flex;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #121212;
+}
+.contact__info-booking {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border-bottom: 1px solid #121212;
+}
+.contact__info-booking-title {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+.contact__info-caption {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  margin-bottom: 16px;
+}
+.contact__info-form {
+  display: flex;
+  gap: 16px;
+}
+.contact__info-form-number {
+  width: 272px;
+  border: 1px solid #d2d2d7;
+  padding: 16px;
+  color: #808080;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+.contact__info-form-btn {
+  width: 272px;
+  padding: 16px 24px 14px;
+  color: white;
+  background-color: #121212;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.48px;
+}
+.contact__info-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.contact__info-titles {
+  display: flex;
+  border-bottom: 1px solid #121212;
+}
+.contact__info-title {
+  text-align: center;
+  width: 360px;
+  padding: 16px 10px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45.6px;
+  border-right: 1px solid #121212;
+}
+.contact__info-title:last-child {
+  border-right: none;
+}
+.contact__info-block {
+  display: flex;
+}
+.contact__info-block-item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 22px;
+  border-right: 1px solid #121212;
+}
+.contact__info-number-text {
+  font-style: italic;
+  font-weight: 100;
+  line-height: 19.2px;
+  letter-spacing: 0.4px;
+}
+.contact__info-address-caption {
+  font-weight: 500;
+  line-height: 16.8px;
+  text-transform: uppercase;
+}
+.contact__info-address-text {
+  font-style: italic;
+  font-weight: 100;
+  line-height: 19.2px;
+  letter-spacing: 0.4px;
+}
+.contact__decor {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+}
+.contact__decor-wrap {
+  display: flex;
+}
+.contact__decor-title {
+  width: 360px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45.6px;
+  border-right: 1px solid #121212;
+  padding: 16px 40px;
+}
+.contact__decor-socials {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  gap: 32px;
+  padding: 16px 40px;
+  border-right: 1px solid #121212;
 }/*# sourceMappingURL=main.css.map */
