@@ -11,9 +11,14 @@
     &__item-link {
         padding: 24px 32px;
         border-right: $border;
+        transition: all 0.3s ease-in-out;
 
         &:first-child {
             border-left: $border;
+        }
+        &:hover {
+            color: white;
+            background-color: $black;
         }
     }
 }

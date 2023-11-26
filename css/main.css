@@ -131,9 +131,14 @@ body {
 .header__item-link {
   padding: 24px 32px;
   border-right: 1px solid #121212;
+  transition: all 0.3s ease-in-out;
 }
 .header__item-link:first-child {
   border-left: 1px solid #121212;
+}
+.header__item-link:hover {
+  color: white;
+  background-color: #121212;
 }
 
 .category__content {
@@ -379,7 +384,7 @@ body {
   width: 272px;
   border: 1px solid #d2d2d7;
   padding: 16px;
-  color: #808080;
+  color: #121212;
   font-weight: 500;
   line-height: 16.8px;
 }
@@ -393,10 +398,11 @@ body {
   font-weight: 500;
   line-height: 19.2px;
   letter-spacing: 0.48px;
+  transition: all 0.3s ease-in-out;
 }
-.contact__info-wrap {
-  display: flex;
-  flex-direction: column;
+.contact__info-form-btn:hover {
+  color: #121212;
+  background-color: #808080;
 }
 .contact__info-titles {
   display: flex;
@@ -416,6 +422,7 @@ body {
 }
 .contact__info-block {
   display: flex;
+  height: 100%;
 }
 .contact__info-block-item {
   width: 360px;
@@ -426,6 +433,9 @@ body {
   padding: 24px;
   gap: 22px;
   border-right: 1px solid #121212;
+}
+.contact__info-block-item:last-child {
+  border-right: none;
 }
 .contact__info-number-text {
   font-style: italic;
@@ -459,12 +469,14 @@ body {
   font-weight: 500;
   line-height: 45.6px;
   border-right: 1px solid #121212;
+  border-left: 1px solid #121212;
   padding: 16px 40px;
 }
 .contact__decor-socials {
   display: flex;
   width: 360px;
   align-items: center;
+  justify-content: space-between;
   gap: 32px;
   padding: 16px 40px;
   border-right: 1px solid #121212;
