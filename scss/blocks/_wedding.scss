@@ -1,0 +1,48 @@
+.wedding {
+    &__wrap {
+        background-image: url('./../../img/wedding-bg.png');
+        background-size: cover;
+        background-position: center center;
+        height: 720px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        &::before {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(
+                0,
+                0,
+                0,
+                0.5
+            ); /* Цвет и уровень прозрачности (0.5 = 50%) */
+        }
+    }
+    &__caption {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__text {
+        text-align: center;
+        width: 586px;
+        margin-bottom: 64px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.2px;
+    }
+    &__btn {
+        border: 1px solid white;
+    }
+}
