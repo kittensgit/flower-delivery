@@ -1,0 +1,50 @@
+.reviews {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
+    &__img {
+        margin-bottom: 8px;
+    }
+    &__caption {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__caruosel {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    &__arrow {
+        cursor: pointer;
+    }
+    &__quote {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 38.4px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__author {
+        font-weight: 500;
+        line-height: 19.2px;
+        margin-bottom: 32px;
+    }
+    &__circles {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 64px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        border: $border;
+    }
+}
