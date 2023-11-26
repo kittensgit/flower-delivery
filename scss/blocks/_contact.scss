@@ -4,6 +4,7 @@
     }
 
     &__info {
+        width: 720px;
         display: flex;
         flex-direction: column;
         border-left: $border;
@@ -52,8 +53,8 @@
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    color: $black;
-                    background-color: #808080;
+                    color: white;
+                    background-color: $dark-grey;
                 }
             }
         }

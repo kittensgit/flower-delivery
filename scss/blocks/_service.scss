@@ -1,0 +1,70 @@
+.service {
+    &__wrap {
+        border-top: $border;
+        border-right: $border;
+        border-bottom: $border;
+        display: flex;
+        flex-direction: column;
+    }
+    &__top {
+        border-left: $border;
+
+        &-title {
+            font-size: 50px;
+            font-style: italic;
+            font-weight: 100;
+            line-height: 60px;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: $border;
+        }
+    }
+    &__content {
+        display: flex;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px;
+            justify-content: center;
+
+            &-caption {
+                font-weight: 500;
+                line-height: 16.8px;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+            }
+            &-title {
+                font-size: 50px;
+                font-style: italic;
+                font-weight: 100;
+                line-height: 60px;
+                margin-bottom: 16px;
+            }
+            &-text {
+                width: 560px;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25.2px;
+                margin-bottom: 64px;
+            }
+            &-btn {
+                padding: 16px 24px 14px;
+                border: $border;
+                font-weight: 500;
+                line-height: 19.2px;
+                letter-spacing: 0.48px;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
