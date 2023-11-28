@@ -6,8 +6,13 @@
 
         &-item {
             display: flex;
+
+            &-icons {
+                display: none;
+            }
         }
     }
+
     &__item-link {
         padding: 24px 32px;
         border-right: $border;
@@ -19,6 +24,22 @@
         &:hover {
             color: white;
             background-color: $black;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__nav-item {
+            &-links {
+                display: none;
+            }
+            &-icons {
+                display: flex;
+            }
+        }
+        &__item-link {
+            padding: 0;
         }
     }
 }

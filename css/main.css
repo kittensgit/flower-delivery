@@ -117,7 +117,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -160,6 +160,9 @@ body {
 .header__nav-item {
   display: flex;
 }
+.header__nav-item-icons {
+  display: none;
+}
 .header__item-link {
   padding: 24px 32px;
   border-right: 1px solid #121212;
@@ -173,6 +176,17 @@ body {
   background-color: #121212;
 }
 
+@media (max-width: 768px) {
+  .header__nav-item-links {
+    display: none;
+  }
+  .header__nav-item-icons {
+    display: flex;
+  }
+  .header__item-link {
+    padding: 0;
+  }
+}
 .category__content {
   display: flex;
   flex-direction: column;
