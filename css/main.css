@@ -143,6 +143,15 @@ body {
   letter-spacing: 0.48px;
 }
 
+.socials {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 16px 40px;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -465,12 +474,6 @@ body {
   padding: 16px 40px;
 }
 .contact__decor-socials {
-  display: flex;
-  width: 360px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  padding: 16px 40px;
   border-right: 1px solid #121212;
 }
 
@@ -570,6 +573,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 80px;
+  border-right: 1px solid #121212;
+  border-left: 1px solid #121212;
 }
 .reviews__img {
   margin-bottom: 8px;
@@ -611,4 +616,70 @@ body {
 }
 .reviews__btn {
   border: 1px solid #121212;
+  transition: all 0.3s ease-in-out;
+}
+.reviews__btn:hover {
+  background-color: #121212;
+  color: white;
+}
+
+.footer__list {
+  display: flex;
+  border: 1px solid #121212;
+}
+.footer__list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-right: 1px solid #121212;
+}
+.footer__list-item:last-child {
+  border-right: none;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__form-text {
+  line-height: 22.4px;
+  max-width: 280px;
+  margin-bottom: 24px;
+}
+.footer__form-input {
+  border: 1px solid #121212;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  margin-bottom: 16px;
+}
+.footer__form-btn {
+  background-color: #121212;
+  color: white;
+}
+.footer__item-title {
+  color: #808080;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25.2px;
+  margin-bottom: 24px;
+}
+.footer__item-caption {
+  font-size: 14px;
+  color: #808080;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-bottom: 8px;
+}
+.footer__item-text {
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.4px;
+  margin-bottom: 24px;
+}
+.footer__item-link {
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=main.css.map */

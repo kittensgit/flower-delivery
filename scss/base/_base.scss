@@ -33,3 +33,12 @@ body {
     line-height: 19.2px;
     letter-spacing: 0.48px;
 }
+
+.socials {
+    display: flex;
+    width: 360px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px 40px;
+}
