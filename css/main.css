@@ -712,7 +712,8 @@ body {
   border-bottom: 1px solid #121212;
 }
 .service__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .service__content-info {
   display: flex;
@@ -728,7 +729,7 @@ body {
   margin-bottom: 16px;
 }
 .service__content-info-text {
-  width: 560px;
+  max-width: 560px;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -745,6 +746,91 @@ body {
   color: white;
 }
 
+@media (max-width: 1155px) {
+  .service__top-title {
+    padding: 60px 0;
+  }
+  .service__content-info-caption {
+    margin-bottom: 18px;
+  }
+  .service__content-info-title {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  .service__content-info-text {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 1000px) {
+  .service__top-title {
+    padding: 45px 0;
+  }
+  .service__content-info {
+    padding: 55px;
+  }
+  .service__content-info-caption {
+    margin-bottom: 12px;
+  }
+  .service__content-info-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .service__content-info-text {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 870px) {
+  .service__top-title {
+    font-size: 45px;
+    padding: 40px 0;
+  }
+  .service__content-info {
+    padding: 40px;
+  }
+  .service__content-info-caption {
+    margin-bottom: 8px;
+  }
+  .service__content-info-title {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .service__content-info-text {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 750px) {
+  .service__top-title {
+    font-size: 40px;
+    padding: 35px 0;
+  }
+  .service__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .service__content-img img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .service__top-title {
+    font-size: 35px;
+    padding: 25px 0;
+  }
+  .service__content-img img {
+    height: 420px;
+  }
+  .service__content-info {
+    padding: 25px;
+  }
+  .service__content-info-btn {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
 .wedding__wrap {
   background-image: url("./../../img/wedding-bg.png");
   background-size: cover;
