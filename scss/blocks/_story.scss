@@ -1,6 +1,7 @@
 .story {
     &__content {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         border-left: $border;
         border-right: $border;
     }
@@ -9,7 +10,7 @@
         border-top: $border;
 
         &-title {
-            width: 560px;
+            max-width: 560px;
         }
     }
     &__about {
@@ -29,7 +30,6 @@
         }
         &-desc {
             line-height: 22.4px;
-            width: 543px;
         }
         &-btn {
             border: $border;
@@ -41,6 +41,36 @@
                 color: white;
                 background-color: $black;
             }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .story {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__question {
+            padding: 70px;
+            border-bottom: $border;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .story {
+        &__question {
+            padding: 60px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .story {
+        &__question {
+            padding: 45px;
+        }
+        &__about {
+            padding: 40px 20px;
         }
     }
 }
