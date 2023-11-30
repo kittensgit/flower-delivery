@@ -1,19 +1,18 @@
 .advantages {
     &__content {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         border: $border;
     }
     &__question {
         padding: 80px;
-        width: 721px;
 
         &-title {
-            width: 360px;
+            max-width: 360px;
         }
     }
     &__about {
         border-left: $border;
-        width: 720px;
     }
     &__list {
         display: flex;
@@ -34,6 +33,65 @@
             }
             &-item:last-child {
                 border-bottom: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .advantages {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__question {
+            padding: 70px;
+            border-bottom: $border;
+        }
+        &__about {
+            border-left: 0;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .advantages {
+        &__question {
+            padding: 60px;
+        }
+        &__list {
+            &-item {
+                padding: 60px;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .advantages {
+        &__question {
+            padding: 50px;
+        }
+        &__list {
+            &-item {
+                padding: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .advantages {
+        &__question {
+            padding: 40px;
+            &-title {
+                font-size: 38px;
+            }
+        }
+        &__list {
+            &-item {
+                padding: 40px 20px;
+
+                &-title {
+                    font-size: 30px;
+                }
             }
         }
     }

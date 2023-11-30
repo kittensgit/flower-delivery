@@ -428,19 +428,18 @@ body {
   }
 }
 .advantages__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid #121212;
 }
 .advantages__question {
   padding: 80px;
-  width: 721px;
 }
 .advantages__question-title {
-  width: 360px;
+  max-width: 360px;
 }
 .advantages__about {
   border-left: 1px solid #121212;
-  width: 720px;
 }
 .advantages__list {
   display: flex;
@@ -463,6 +462,49 @@ body {
   border-bottom: none;
 }
 
+@media (max-width: 1440px) {
+  .advantages__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages__question {
+    padding: 70px;
+    border-bottom: 1px solid #121212;
+  }
+  .advantages__about {
+    border-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .advantages__question {
+    padding: 60px;
+  }
+  .advantages__list-item {
+    padding: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .advantages__question {
+    padding: 50px;
+  }
+  .advantages__list-item {
+    padding: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .advantages__question {
+    padding: 40px;
+  }
+  .advantages__question-title {
+    font-size: 38px;
+  }
+  .advantages__list-item {
+    padding: 40px 20px;
+  }
+  .advantages__list-item-title {
+    font-size: 30px;
+  }
+}
 .contact__content {
   display: flex;
 }
