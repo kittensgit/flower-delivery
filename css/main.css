@@ -1093,4 +1093,30 @@ body {
   line-height: 19.2px;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 1200px) {
+  .footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__list-item {
+    border-bottom: 1px solid #121212;
+  }
+  .footer__list-item:last-child {
+    border-right: 1px solid #121212;
+  }
+}
+@media (max-width: 800px) {
+  .footer__item-socials {
+    padding: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .footer__form-text {
+    max-width: 100%;
+  }
+  .footer__list {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */
