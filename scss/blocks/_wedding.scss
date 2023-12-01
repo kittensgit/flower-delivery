@@ -5,12 +5,14 @@
         background-position: center center;
         height: 720px;
         color: white;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
         z-index: 1;
+
         &::before {
             z-index: -1;
             content: '';
@@ -35,7 +37,7 @@
     }
     &__text {
         text-align: center;
-        width: 586px;
+        max-width: 586px;
         margin-bottom: 64px;
         font-size: 18px;
         font-style: normal;
@@ -44,5 +46,62 @@
     }
     &__btn {
         border: 1px solid white;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wedding {
+        &__wrap {
+            height: 650px;
+        }
+        &__caption {
+            margin-bottom: 12px;
+        }
+        &__text {
+            margin-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 760px) {
+    .wedding {
+        &__wrap {
+            height: 500px;
+        }
+        &__caption {
+            margin-bottom: 5px;
+        }
+        &__title {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+        &__text {
+            max-width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .wedding {
+        &__wrap {
+            height: 416px;
+        }
+        &__caption {
+            margin-bottom: 2px;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+        &__text {
+            max-width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 25px;
+        }
+        &__btn {
+            padding: 10px 24px 10px;
+        }
     }
 }

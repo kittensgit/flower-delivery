@@ -862,7 +862,7 @@ body {
 }
 .wedding__text {
   text-align: center;
-  width: 586px;
+  max-width: 586px;
   margin-bottom: 64px;
   font-size: 18px;
   font-style: normal;
@@ -873,6 +873,56 @@ body {
   border: 1px solid white;
 }
 
+@media (max-width: 1000px) {
+  .wedding__wrap {
+    height: 650px;
+  }
+  .wedding__caption {
+    margin-bottom: 12px;
+  }
+  .wedding__text {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 760px) {
+  .wedding__wrap {
+    height: 500px;
+  }
+  .wedding__caption {
+    margin-bottom: 5px;
+  }
+  .wedding__title {
+    font-size: 45px;
+    margin-bottom: 12px;
+  }
+  .wedding__text {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .wedding__wrap {
+    height: 416px;
+  }
+  .wedding__caption {
+    margin-bottom: 2px;
+  }
+  .wedding__title {
+    font-size: 35px;
+    margin-bottom: 8px;
+  }
+  .wedding__text {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 25px;
+  }
+  .wedding__btn {
+    padding: 10px 24px 10px;
+  }
+}
 .reviews__content {
   display: flex;
   flex-direction: column;
