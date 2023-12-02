@@ -410,6 +410,7 @@ body {
   }
   .story__question {
     padding: 70px;
+    border-top: 0;
     border-bottom: 1px solid #121212;
   }
 }
